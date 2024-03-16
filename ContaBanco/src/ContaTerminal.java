@@ -13,7 +13,12 @@ public class ContaTerminal{
             System.out.println("Deseja criar a conta ? S/N");
             String criaConta = input.nextLine();
 
-            if(criaConta.equals("s") || criaConta.equals("S")){
+            criaConta = criaConta.toUpperCase();
+            System.out.println(criaConta);
+
+            switch (criaConta) {
+                case "S":
+                    
 
                 System.out.println("Digite o numero da conta:");
                 int numero = input.nextInt();
@@ -31,12 +36,18 @@ public class ContaTerminal{
                 ContaGeral contaGeral = new ContaGeral(numero, agencia ,nome, saldo);
                 contaGeral.criarConta(contaGeral);
              
+                break;
+            
+                case "N":
+                    System.out.println("Não criado");
+                    loop = false;
 
-            }else{
-                System.out.println("Não criado");
-                loop = false;
+
+                default:
+                    break;
             }
 
+           
 
         }while(loop);
 
