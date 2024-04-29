@@ -1,10 +1,6 @@
-import Estudos.Collections.List.OperacoesBasicas.ListaDeTarefa;
-import Estudos.Collections.List.OperacoesBasicas.Tarefa;
+import collections.list.list.exercicios.listaDeTarefas.ListaDeTarefa;
+import collections.list.list.exercicios.listaDeTarefas.Tarefa;
 
-import java.util.*;
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
@@ -21,12 +17,19 @@ public class Main {
         listaDeTarefa.adicionarTarefa("livro zero a pro");
         listaDeTarefa.adicionarTarefa("livro java 8");
 
+
+        listaDeTarefa.adicionarTarefa(String.valueOf(new Tarefa("Java fullstack")));
+
         System.out.println("total de tarefas: " + listaDeTarefa.obterTotalDeTarefas());
 
         listaDeTarefa.removerTarefa("livro zero a pro");
         System.out.println("total de tarefas: " + listaDeTarefa.obterTotalDeTarefas());
 
         listaDeTarefa.obterDescricoesDeTarefas();
+
+        System.out.println("----------------------------------------------------------");
+
+
 
 
 

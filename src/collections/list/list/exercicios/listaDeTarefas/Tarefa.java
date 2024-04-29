@@ -1,4 +1,4 @@
-package Estudos.Collections.List.OperacoesBasicas;
+package collections.list.list.exercicios.listaDeTarefas;
 
 public class Tarefa {
 
@@ -10,7 +10,9 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return descricao;
+        return "Tarefa{" +
+                "descricao='" + descricao + '\'' +
+                '}';
     }
 
     public String getDescricao() {
