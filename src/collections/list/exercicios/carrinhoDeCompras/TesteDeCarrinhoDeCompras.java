@@ -1,4 +1,4 @@
-package collections.list.list.exercicios.carrinhoDeCompras;
+package collections.list.exercicios.carrinhoDeCompras;
 
 public class TesteDeCarrinhoDeCompras {
 

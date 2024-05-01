@@ -1,4 +1,4 @@
-package collections.list.list.exercicios.listaDeTarefas;
+package collections.list.exercicios.listaDeTarefas;
 
 import java.util.ArrayList;
 import java.util.List;

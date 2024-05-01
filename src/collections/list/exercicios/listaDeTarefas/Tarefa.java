@@ -1,4 +1,4 @@
-package collections.list.list.exercicios.listaDeTarefas;
+package collections.list.exercicios.listaDeTarefas;
 
 public class Tarefa {
 

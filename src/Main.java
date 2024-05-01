@@ -1,5 +1,5 @@
-import collections.list.list.exercicios.listaDeTarefas.ListaDeTarefa;
-import collections.list.list.exercicios.listaDeTarefas.Tarefa;
+import collections.list.exercicios.listaDeTarefas.ListaDeTarefa;
+import collections.list.exercicios.listaDeTarefas.Tarefa;
 
 public class Main {
     public static void main(String[] args) {

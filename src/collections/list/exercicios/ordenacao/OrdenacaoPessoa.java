@@ -1,4 +1,4 @@
-package collections.list.list.exercicios.ordenacao;
+package collections.list.exercicios.ordenacao;
 
 import java.util.*;
 

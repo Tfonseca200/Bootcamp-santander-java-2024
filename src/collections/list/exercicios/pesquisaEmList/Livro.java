@@ -1,4 +1,4 @@
-package collections.list.list.exercicios.pesquisaEmList;
+package collections.list.exercicios.pesquisaEmList;
 
 public class Livro {
 
