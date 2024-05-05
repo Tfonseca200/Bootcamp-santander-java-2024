@@ -1,5 +1,6 @@
 package collections.set.exercicios.conjuntoDePalavrasUnicas;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,30 +18,34 @@ public class ConjuntoPalavrasUnicas {
     }
 
     public void removerPalavra(String palavra){
-        PalavrasUnicas palavraObj = new PalavrasUnicas(palavra);
+        PalavrasUnicas palavraPraRemover = new PalavrasUnicas(palavra);
         for(PalavrasUnicas palavras : palavrasList){
             if(palavras.equals(palavra)){
-                palavraObj = palavras;
+                palavraPraRemover = palavras;
                 break;
             }
         }
-        palavrasList.remove(palavraObj);
+        palavrasList.remove(palavraPraRemover);
     }
 
-    public void verificarPalavra(PalavrasUnicas palavra){
+    public void verificarPalavra(String palavra){
 
-        for(PalavrasUnicas palavras : palavrasList){
-            if(palavras.equals(palavra)){
-                System.out.println("Palavra presente na lista!");
+        /* falta corrigir método */
+
+        for (PalavrasUnicas palavras : palavrasList) {
+            if (palavras.getPalavrasUnicas().equalsIgnoreCase(palavra)) {
+                System.out.println("Palavra presente na lista");
                 break;
             }else{
-                System.out.println("Palavra não presente na lista!");
+                System.out.println("Palavra não presente na lista");
                 break;
             }
         }
     }
 
-    public void exibirPalavrasUnicas(){
+
+
+        public void exibirPalavrasUnicas(){
         System.out.println(palavrasList);
     }
 
@@ -48,13 +53,23 @@ public class ConjuntoPalavrasUnicas {
     public static void main(String[] args) {
         ConjuntoPalavrasUnicas c = new ConjuntoPalavrasUnicas();
 
-        c.adiocinarPalavra("Thiago");
         c.adiocinarPalavra("Diego");
+        c.adiocinarPalavra("Thiago");
+
 
         c.exibirPalavrasUnicas();
 
-        PalavrasUnicas u = new PalavrasUnicas("Thiago");
+        c.removerPalavra("Thiago");
 
-        c.verificarPalavra(u);
+
+        c.exibirPalavrasUnicas();
+        c.adiocinarPalavra("Thiago");
+
+        c.exibirPalavrasUnicas();
+        c.verificarPalavra("Thiago");
+
+
+
+
     }
 }

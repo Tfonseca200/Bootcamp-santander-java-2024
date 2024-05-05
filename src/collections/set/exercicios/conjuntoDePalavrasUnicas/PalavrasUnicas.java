@@ -1,7 +1,9 @@
 package collections.set.exercicios.conjuntoDePalavrasUnicas;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Objects;
 
-public class PalavrasUnicas {
+public class PalavrasUnicas{
 
    private String palavrasUnicas;
 
@@ -24,14 +26,12 @@ public class PalavrasUnicas {
                 '}';
     }
 
+
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null || getClass() != obj.getClass())
-            return false;
-        PalavrasUnicas other = (PalavrasUnicas) obj;
-        return palavrasUnicas.equals(other.palavrasUnicas);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PalavrasUnicas that)) return false;
+        return Objects.equals(getPalavrasUnicas(), that.getPalavrasUnicas());
     }
 
     @Override
