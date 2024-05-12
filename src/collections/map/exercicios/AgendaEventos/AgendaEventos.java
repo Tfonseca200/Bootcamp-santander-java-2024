@@ -57,7 +57,7 @@ public class AgendaEventos {
 
         AgendaEventos eventos = new AgendaEventos();
 
-        eventos.adicionarEvento(LocalDate.of(2024,05,15), "Evento1", "Atração1");
+        eventos.adicionarEvento(LocalDate.of(2024,4,15), "Evento1", "Atração1");
         eventos.adicionarEvento(LocalDate.of(2024, Month.JULY,01), "Evento2", "Atração2");
         eventos.adicionarEvento(LocalDate.of(2024,Month.AUGUST,03), "Evento3", "Atração3");
         eventos.adicionarEvento(LocalDate.of(2024,Month.OCTOBER,10), "Evento4", "Atração4");
