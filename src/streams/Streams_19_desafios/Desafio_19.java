@@ -22,11 +22,9 @@ public class Desafio_19 {
                 .sum());
 
 
-        if(somaDosNumerosDivisiveisDe3E5.isPresent()){
-
-            System.out.println(somaDosNumerosDivisiveisDe3E5.get());
-        }
-
+        somaDosNumerosDivisiveisDe3E5.ifPresent(n -> System.out.println("soma dos numeros divisiveis de 03 e 05: "
+                + somaDosNumerosDivisiveisDe3E5.get()
+        ));
 
     }
 }
