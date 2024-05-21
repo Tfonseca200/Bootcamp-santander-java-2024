@@ -1,6 +1,8 @@
 package streams.Streams_19_desafios;
 
 import java.util.*;
+import java.util.stream.DoubleStream;
+import java.util.stream.Stream;
 
 /*
 
@@ -15,12 +17,19 @@ public class Desafio_05 {
 
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
-        OptionalDouble somaDoNumerosMaioresCinco = numeros.stream()
-                        .filter(n -> n > 5)
+        int somaDoNumerosMaioresCinco = numeros.stream()
+                        .filter(n -> n >= 5)
                         .mapToInt(Integer::intValue)
-                        .average();
+                        .sum();
 
 
-        System.out.println(somaDoNumerosMaioresCinco);
+        long size = numeros.stream()
+                .filter(n -> n >= 5)
+                .count();
+
+        double mediaDosNumerosMaioresQue5 = (double) somaDoNumerosMaioresCinco / size;
+
+
+        System.out.printf("%.2f" , mediaDosNumerosMaioresQue5);
     }
 }

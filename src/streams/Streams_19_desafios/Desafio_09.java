@@ -19,6 +19,10 @@ public class Desafio_09 {
                                 .count() != numeros.size();
 
 
-        System.out.println("Tem numero repetitivo: " + verificarNumerosDistintos);
+        if(verificarNumerosDistintos) {
+            System.out.println("Tem numero repetitivo");
+        }else {
+            System.out.println("Não tem numero repetitivo");
+        }
     }
 }
