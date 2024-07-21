@@ -1,4 +1,4 @@
-## Repositorio criado pra estudos do Bootcamp java
+# Repositorio criado pra estudos do Bootcamp java
 
 A dio em parceria com santander propos bolsas de estudos na area de tecnologia, fui escolhido pra cursar a trilha Back end java.
 
@@ -12,7 +12,7 @@ Apredizados:
 - Soft skills
 
 
-# Projeto UML
+## Projeto UML de sistema iphone
 
 ![UML Iphone](Imagens/UmlIphone.jpg)
 
