@@ -1,8 +1,8 @@
 # Repositorio criado pra estudos do Bootcamp java
 
-A dio em parceria com santander propos bolsas de estudos na area de tecnologia, fui escolhido pra cursar a trilha Back end java.
+Repositorio Bootcamp java.
 
-Apredizados:
+Estudo e apredizados:
 
 - Fundamentos de java
 - Fundamentos a orietação a objetos
